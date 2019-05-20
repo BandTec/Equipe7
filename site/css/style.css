@@ -599,7 +599,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Featured Services Section
 --------------------------------*/
-
+/* 
 #featured-services {
   background: #000;
 }
@@ -638,13 +638,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   color: #fff;
   margin-bottom: 0;
-}
+} */
 
 /* About Us Section
 --------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/fundo.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
