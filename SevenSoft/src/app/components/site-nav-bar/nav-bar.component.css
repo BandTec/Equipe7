@@ -1,0 +1,147 @@
+#body {
+    background-size: cover;
+    background-position: center;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.navigation {
+    width: 50px;
+    height: 100%;
+    display: block;
+    padding-right: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    border-radius: 0% 50% 350% 0%;
+    perspective: 800;
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation_icon {
+    width: 55px;
+    height: 44px;
+    display: block;
+    position: relative;
+    top: 22%;
+    left: 35%;
+    background: hsla(312, 51%, 41%, 0.0);
+    cursor: pointer;
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation_icon .topBar {
+    width: 55px;
+    height: 2px;
+    display: block;
+    background: #f7082d;
+    position: absolute;
+    top: 10px;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation_icon .middleBar {
+    width: 55px;
+    height: 2px;
+    display: block;
+    background: #f7082d;
+    position: absolute;
+    top: 20px;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation_icon .bottomBar {
+    width: 35px;
+    height: 2px;
+    display: block;
+    background: #f7082d;
+    position: absolute;
+    top: 30px;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation .navigation_ul {
+    float: right;
+    margin-top: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateY(-90deg) translateX(-300px);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+
+.navigation .navigation_ul li {
+    list-style: none;
+    text-align: right;
+}
+
+.navigation .navigation_ul a {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.navigation .navigation_ul a:hover {
+    color: hsl(185, 96%, 33%);
+}
+
+.navigation-open {
+    width: 350px;
+    height: 100%;
+    display: block;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    border-radius: 0% 1% 1% 0%;
+}
+
+.navigation-open .navigation_icon {
+    left: 80%;
+}
+
+.navigation-open .navigation_ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation-open .topBar {
+    top: 21px;
+    transform: rotate(45deg);
+}
+
+.navigation-open .middleBar {
+    width: 0;
+    top: 22px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30px);
+}
+
+.navigation-open .bottomBar {
+    width: 55px;
+    top: 21px;
+    transform: rotate(-45deg);
+}
+
+.navigation-open .navigation_ul {
+    transform: rotateY(0) translateX(0);
+}
