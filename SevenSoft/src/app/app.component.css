@@ -1,0 +1,5 @@
+.carousel{
+    z-index: -1;
+    position: relative;
+    bottom: 200px;
+}

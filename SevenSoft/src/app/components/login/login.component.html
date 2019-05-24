@@ -1,0 +1,129 @@
+<!-- <div [formGroup]="myGroup">
+  <input formControlName="firstName">
+</div>
+
+In your class:
+
+this.myGroup = new FormGroup({
+   firstName: new FormControl()
+}); -->
+
+<!-- <div class="container">
+  <div class="col-md-6 col-md-offset-3 loginBox">
+    <h3>Log In</h3>
+    <p *ngIf="message" clas s="text-center error">{{message}}</p>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.username.errors }">
+        <div class="form-group">
+          <input type="text" name="username" formControlName="username" placeholder="username" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" formControlName="password" placeholder="password" class="form-control"
+            autofocus>
+          <div *ngIf="submitted && f.password.errors" class="help-block">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+        </div>
+        <button class="btn btn-success btn-block" (click)="login()">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="col-md-6 col-md-offset-3 loginBox">
+    <h3>Log In</h3>
+    <p *ngIf="message" clas s="text-center error">{{message}}</p>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.username.errors }">
+        <label for="username" class="col-md-3 col-sm-5 col-xs-12">Username</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="text" class="form-control" formControlName="username" />
+          <div *ngIf="submitted && f.username.errors" class="help-block">
+            <div *ngIf="f.username.errors.required">Userid is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+        <label for="password" class="col-md-3 col-sm-5 col-xs-12">Password</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="password" class="form-control" formControlName="password" />
+          <div *ngIf="submitted && f.password.errors" class="help-block">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 form-group text-right">
+        <button class="btn btn-success" type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <div class="col-md-6 col-md-offset-3 loginBox">
+    <h3>Log In</h3>
+    <p *ngIf="message" clas s="text-center error">{{message}}</p>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.username.errors }">
+        <label for="username" class="col-md-3 col-sm-5 col-xs-12">Username</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="text" class="form-control" [(ngModel)]="user.username" />
+          <div *ngIf="submitted && f.username.errors" class="help-block">
+            <div *ngIf="f.username.errors.required">Userid is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+        <label for="password" class="col-md-3 col-sm-5 col-xs-12">Password</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="password" class="form-control" [(ngModel)]="user.password" />
+          <div *ngIf="submitted && f.password.errors" class="help-block">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 form-group text-right">
+        <button class="btn btn-success" type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+
+
+
+<div class="container">
+  <div class="col-md-6 col-md-offset-3 loginBox">
+    <h3>Log In</h3>
+    <p *ngIf="message" class="text-center error">{{message}}</p>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.username.errors }">
+        <label for="username" class="col-md-3 col-sm-5 col-xs-12">Username</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="text" class="form-control"  formControlName="username" />
+          <!-- <div *ngIf="submitted && f.username.errors" class="help-block">
+            <div *ngIf="f.username.errors.required">Username is required</div>
+          </div> -->
+        </div>
+      </div>
+      <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+        <label for="password" class="col-md-3 col-sm-5 col-xs-12">Password</label>
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <input type="password" class="form-control"  formControlName="password" />
+          <!-- <div *ngIf="submitted && f.password.errors" class="help-block">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-xs-12 form-group text-right">
+        <button class="btn btn-success" type="submit">Login</button>
+        <button (click)="onClick()" class="btn btn-primary">Clique aqui</button>
+
+      </div>
+    </form>
+  </div>
+</div>
