@@ -1,0 +1,34 @@
+<div class="col-md-4 offset-md-4">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input type="text" name="username" [(ngModel)]="user.username" placeholder="Usuario" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" [(ngModel)]="user.password" placeholder="Senha" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="firstName" [(ngModel)]="user.firstName" placeholder="Nome" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="lastName" [(ngModel)]="user.lastName" placeholder="Sobrenome" class="form-control"
+            autofocus>
+        </div>
+        <button class="btn btn-success btn-block" (click)="atualizarUsuario()">
+          Editar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card card-body text-center">
+
+
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.carPrev {
+    width: 0%;
+}
+
+#main {
+    position: relative;
+    z-index: -1;
+}
+
+.carNext {
+    width: 0%;
+}
+
+.carPrevControl {
+    position: absolute;
+    left: 480px;
+}
+
+.carNextControl {
+    position: absolute;
+    right: 480px;
+}
+
+.slide3 {
+    height: 857px;
+}
+
+#primeiroSlide {
+    background-image: url('../../../assets/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+}
+
+#segundoSlide {
+    background-image: url('../../../assets/2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    height: 400px;
+}
+
+#terceiroSlide {
+    background-image: url('../../../assets/3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    height: 400px;
+}

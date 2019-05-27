@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+    <app-side-bar-dashboard></app-side-bar-dashboard>
+    <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+  </div>
+  <div class="main-panel">
+    <app-nav-bar-dashboard></app-nav-bar-dashboard>
+    <div class="main-content">
+      <div class="card">
+        <div class="card-header card-header-primary text-center">
+          <h4 class="card-title">Registrar Ocorrencia</h4>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="angForm" (ngSubmit)="login(angForm.value)" class="form">
+            <div class="form-group">
+              <label class="col-md-4">Descrição</label>
+              <input type="text" class="form-control" formControlName="descricao"/>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4" for="exampleFormControlSelect1">Selecionar
+                Criticidade
+              </label>
+              <select class="form-control" formControlName="criticidade" id="exampleFormControlSelect1">
+                <option></option>
+                <option>Baixo</option>
+                <option>Normal</option>
+                <option>Alto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4" for="exampleFormControlSelect2">
+                Onde ocorreu
+              </label>
+              <select class="form-control" formControlName="opcao" id="exampleFormControlSelect2">
+                <option></option>
+                <option>Cadastro</option>
+                <option>Login</option>
+                <option>Evento</option>
+                <option>Software</option>
+                <option>Dashboard</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit" [class.disabled]="angForm.invalid" class="btn btn-primary">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <router-outlet></router-outlet> -->
+  <app-footer-dashboard></app-footer-dashboard>
+</div>

@@ -1,0 +1,16 @@
+<div class="col-md-4" *ngFor="let user of user">
+  <div class="card text-center">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-itens-center">
+      {{user.userId}}
+      <button class="btn btn-danger" (click)="deletarUsuario(user.userId)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <div class="card-body">
+      <p>{{user.username}}</p>
+      <a [routerLink]="['/user/edit', user.userId]" class="btn btn-info btn-block">
+        Editar Usuario
+      </a>
+    </div>
+  </div>
+</div>

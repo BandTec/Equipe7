@@ -1,0 +1,124 @@
+<!-- <div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Cadastro</h4>
+                      <p class="card-category">Preencha os campo abaixo:</p>
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="">
+                                  </mat-form-field>
+                              </div>
+                              <div class="col-md-4">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="" type="email">
+                                  </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-4">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-4">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-4">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                          </div>
+                          <button mat-raised-button type="submit" class="btn btn-danger pull-left">Cadastrar</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> -->
+
+<!-- <p>works</p> -->
+
+<div class="wrapper">
+  <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+    <app-side-bar></app-side-bar>
+    <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+  </div>
+  <div class="main-panel">
+    <app-nav-bar></app-nav-bar>
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-danger">
+                  <h4 class="card-title">Computadores</h4>
+                  <p class="card-category">??</p>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" >
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-itens-center">
+              idMaquina
+              <button class="btn btn-danger"(click)="deletarUsuario(user.userId)">
+                <i class="far fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <p>maquina</p>
+              <a [routerLink]="['/user/edit', user.userId]" class="btn btn-info btn-block">
+                Editar Usuario
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- <router-outlet></router-outlet> -->
+    <div>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="col-md-4 offset-md-4">
+  <div class="card">
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <input type="text" name="username" [(ngModel)]="user.username" placeholder="username" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" [(ngModel)]="user.password" placeholder="password" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="firstName" [(ngModel)]="user.firstName" placeholder="firstName" class="form-control"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <input type="text" name="lastName" [(ngModel)]="user.lastName" placeholder="lastName" class="form-control"
+            autofocus>
+        </div>
+        <button class="btn btn-success btn-block" (click)="cadastrarNovoUsuario()">
+          Cadastrar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg">
+    <app-side-bar-dashboard></app-side-bar-dashboard>
+    <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+  </div>
+  <div class="main-panel">
+    <app-nav-bar-dashboard></app-nav-bar-dashboard>
+    <div class="main-content">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-itens-center">
+              <p>userId</p>
+              <button class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <p>username</p>
+              <a class="btn btn-info btn-block">
+                Editar Usuario
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <router-outlet></router-outlet> -->
+    <app-footer-dashboard></app-footer-dashboard>
+  </div>
+</div>
