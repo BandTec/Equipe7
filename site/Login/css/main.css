@@ -279,17 +279,17 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: #66FCF1;
-  background: -webkit-linear-gradient(left, #66FCF1, #d41872, #fa4299);
-  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: #0B0C10;
+  background: -webkit-linear-gradient(left, #1F2833, #25CCF7, #66FCF1);
+  background: -o-linear-gradient(left, #1F2833, #25CCF7, #66FCF1);
+  background: -moz-linear-gradient(left, #1F2833, #25CCF7, #66FCF1);
+  background: linear-gradient(left, #1F2833, #25CCF7, #66FCF1);
 }
 
 .focus-input100::after {
   font-family: Linearicons-Free;
   font-size: 18px;
-  color: #999999;
+  color: #25CCF7;
 
   content: attr(data-placeholder);
   display: block;
@@ -311,7 +311,7 @@ iframe {
 
 .input100:focus + .focus-input100::after {
   left: 23px;
-  color: #d41872;
+  color: #25CCF7;
 }
 
 .input100:focus + .focus-input100::before {
@@ -320,7 +320,7 @@ iframe {
 
 .has-val.input100 + .focus-input100::after {
   left: 23px;
-  color: #d41872;
+  color: #1F2833;
 }
 
 .has-val.input100 + .focus-input100::before {
@@ -364,11 +364,11 @@ iframe {
   height: 42px;
   border-radius: 21px;
 
-  background: #d41872;
-  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: #1F2833;
+  background: -webkit-linear-gradient(left, #66FCF1);
+  background: -o-linear-gradient(left, #66FCF1,#25CCF7, #66FCF1);
+  background: -moz-linear-gradient(left, #66FCF1, #25CCF7,#66FCF1);
+  background: linear-gradient(left, #66FCF1, #25CCF7, #66FCF1);
   position: relative;
   z-index: 1;
 
@@ -386,7 +386,7 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 21px;
-  background-color: #555555;
+  background-color: #25CCF7;
   top: 0;
   left: 0;
   opacity: 0;
