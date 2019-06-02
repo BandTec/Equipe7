@@ -3,6 +3,7 @@ let router = express.Router();
 var Database = require('../database');
 var isNull = require('../script').isNull;
 const config = require('../config');
+var Document;
 
 router.get('/', function (req, res, next) {
     res.render('cadastro-organizadora');
@@ -32,7 +33,8 @@ router.post('/nova-organizadora', (req, res, next) => {
         console.log("tentando acesso ao banco de dados...")
         Database.query(`insert into userSeven (nome, usuario, email, senha) values ('${nome}', '${usuario}', '${email}','${senha}' );`).then(resultados => {
             console.log(resultados);
-            res.status(200).redirect('/dashboard');
+          //  Document.write('Sua organizadora ' + nome + 'foi cadastrada com sucesso!')
+            res.status(200).redirect('https://sevensoft7.azurewebsites.net/');
 
         })
 
